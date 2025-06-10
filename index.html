@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Mengatur karakter encoding agar teks ditampilkan dengan benar -->
+    <meta charset="UTF-8">
+
+    <!-- Mengatur viewport agar tampilan halaman responsif di berbagai perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul halaman yang akan muncul di tab browser -->
+    <title>Document</title>
+
+    <!-- Menghubungkan CSS Bootstrap versi 5.3.5 dari CDN untuk tampilan modern dan responsif -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+          crossorigin="anonymous">
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigasi utama halaman -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <!-- Tombol toggle yang muncul di tampilan mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu navigasi (pusat halaman) -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- Link menuju halaman Home -->
+                        <a class="nav-link text-dark fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link menuju halaman My Activities -->
+                        <a class="nav-link text-dark fw-bold" href="activity.html">My Activities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten utama halaman -->
+    <main class="container">
+
+        <!-- Bagian profil pengguna -->
+        <section class="profile py-5" style="background-color: rgb(14, 14, 114);">
+            <div class="text-center">
+
+                <!-- Menampilkan foto profil bulat -->
+                <img src="Cynthia.jpg" alt="Foto Cynthia" class="profile-img rounded-circle" 
+                     style="width: 200px;height: 200px;" />
+
+                <!-- Menampilkan nama pemilik portofolio -->
+                <h1 class="text-light">Carmelita Cynthia Dagur</h1>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section class="tentang mt-3">
+            <!-- Judul bagian -->
+            <h2 class="text-center">TENTANG SAYA</h2>
+
+            <!-- Deskripsi singkat mengenai latar belakang, kemampuan teknis dan tujuan karier -->
+            <p style="text-align: justify;">
+                Mahasiswa Informatika dengan performa akademik dan kemampuan interpersonal yang baik. 
+                Memiliki kemampuan menggunakan bahasa pemrograman seperti HTML, Java, dan PHP serta ahli dalam menggunakan Microsoft Excel.
+                Mahir dalam analisis data, pengelolaan dan visualisasi data, serta pemodelan data untuk mendukung pengambilan keputusan.
+                Saat ini, ingin mengembangkan kemampuan di bidang data analyst dalam lingkungan profesional.
+            </p>
+        </section>
+    </main>
+
+    <!-- Bagian tambahan mengenai aktivitas selama masa kuliah -->
+    <section class="container text-center">
+        <p style="text-align: justify;">
+            Di luar perkuliahan, saya aktif mengikuti berbagai kegiatan yang memperkaya pengalaman dan keterampilan saya. 
+            Saya menjalani kuliah dengan penuh tanggung jawab, aktif dalam organisasi kemahasiswaan, 
+            serta dipercaya sebagai bagian dari student staff di kampus. 
+            Selain itu, saya juga menyadari pentingnya menjaga kesehatan mental, sehingga saya menyempatkan waktu untuk healing atau menghibur diri di tengah padatnya aktivitas. 
+            Bagi saya, keseimbangan antara produktivitas dan self-care adalah kunci untuk tetap semangat dan berkembang.
+        </p>
+    </section>
+
+    <!-- Footer halaman berisi informasi hak cipta dan tautan media sosial -->
+    <footer class="text-center mt-5">
+
+        <!-- Teks hak cipta -->
+        <p class="mt-5">© 2025 Carmelita Cynthia Dagur</p>
+
+        <!-- Tautan ke akun media sosial -->
+        <div class="d-flex justify-content-center gap-4">
+            <a href="https://wa.me/6281353161648"><img src="whatsapp.png" alt=""></a>
+            <a href="https://www.instagram.com/carmelita.cynthia?igsh=MTBkdTBkeXhmY29oNg%3D%3D&utm_source=qr"><img src="instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/carmelita-cynthia-dagur-734a3324a"><img src="linkedin.png" alt=""></a>
+        </div>
+    </footer>
+    <output></output>
+
+    <!-- Script Bootstrap agar komponen interaktif dapat berfungsi dengan baik -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
+            crossorigin="anonymous"></script>
+
+</body>
+</html>

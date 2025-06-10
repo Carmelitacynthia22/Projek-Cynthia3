@@ -1,0 +1,105 @@
+/* Reset default margin dan padding semua elemen, serta menggunakan border-box untuk perhitungan ukuran elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mengatur font default untuk seluruh halaman */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mengatur layout utama dengan grid: satu kolom kiri untuk profil, satu kolom kanan untuk tentang saya */
+.container {
+  display: grid;
+  min-height: 100vh; /* Tinggi minimum 100% dari viewport */
+}
+
+/* Bagian sisi kiri: Profil */
+/* Memberi latar belakang biru tua dan menyusun konten secara vertikal di tengah */
+.profile {
+  background-color: #06244d;
+  display: flex; /* Menggunakan flexbox untuk menyusun vertikal */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Styling gambar profil: berbentuk lingkaran, dengan ukuran tetap, dan tidak terdistorsi */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Styling nama pengguna di bagian profil */
+.profile h1 {
+  font-size: 1.6rem;
+  color: #faf8f8;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Bagian sisi kanan: Tentang Saya */
+/* Menyusun konten dalam bentuk grid dengan padding */
+.tentang {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-rows: auto; /* Baris otomatis menyesuaikan konten */
+}
+
+/* Styling untuk judul bagian tentang saya */
+.tentang h2 {
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+/* Styling untuk paragraf deskripsi bagian tentang saya */
+.tentang p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Styling untuk footer di bagian bawah halaman */
+footer {
+  grid-column: 1 / -1; /* Membuat footer membentang seluruh kolom grid */
+  background-color: #06244d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+/* Jika lebar layar di bawah 1023px, ubah layout menjadi vertikal */
+@media (max-width: 1023px) {
+  .container {
+      display: flex; /* Ganti dari grid ke flexbox */
+      flex-direction: column; /* Susun konten menjadi satu kolom vertikal */
+  }
+
+  .profile,
+  .tentang {
+      flex: 1 1 100%; /* Biarkan masing-masing bagian mengambil lebar penuh */
+      padding: 2rem;
+  }
+
+  /* Ukuran gambar profil sedikit diperkecil untuk perangkat lebih kecil */
+  .profile-img {
+      width: 150px;
+      height: 150px;
+  }
+
+  footer {
+      padding: 1rem;
+  }
+}
